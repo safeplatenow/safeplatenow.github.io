@@ -14,7 +14,7 @@
   header { text-align:center; margin-bottom:22px; }
   header h1 { font-size:20px; margin:6px 0 4px; }
   header p { font-size:13px; opacity:.7; margin:0; }
-  .card { display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit;
+  .card { position:relative; display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit;
           background:#fff; border:1px solid #eadfce; border-radius:16px; padding:12px;
           margin-bottom:12px; transition:transform .1s ease, box-shadow .1s ease; }
   @media (prefers-color-scheme: dark) { .card { background:#1f1f1f; border-color:#333; } }
@@ -23,6 +23,14 @@
   .meta { display:flex; flex-direction:column; gap:4px; min-width:0; }
   .name { font-weight:600; font-size:15px; }
   .cta { font-size:12px; color:#c8461e; }
+  .card.soldout { opacity:.6; filter:grayscale(.6); }
+  .card.soldout .cta { color:#888; }
+  .badge { position:absolute; top:10px; right:12px; background:#b3261e; color:#fff;
+           font-size:11px; font-weight:700; padding:3px 9px; border-radius:9px; letter-spacing:.5px; }
+  .disclosure { background:#fff4e6; border:1px solid #f0c98a; color:#7a4a12; font-size:12.5px;
+                font-weight:600; text-align:center; padding:11px 12px; border-radius:12px;
+                margin:0 0 16px; line-height:1.5; }
+  @media (prefers-color-scheme: dark) { .disclosure { background:#2a2318; border-color:#5a4a2a; color:#e8c98a; } }
   footer { text-align:center; font-size:11px; opacity:.55; margin-top:24px; line-height:1.6; }
 </style></head>
 <body><div class="wrap">
@@ -30,6 +38,7 @@
     <h1>@safe.plate.now</h1>
     <p>매일의 식탁을 더 좋게</p>
   </header>
+  <p class="disclosure">[광고] 이 페이지의 상품 링크는 쿠팡 파트너스 활동의 일환으로,<br>이에 따른 일정액의 수수료를 제공받습니다.</p>
     <a class="card" href="https://link.coupang.com/a/gjidfgjFAa" target="_blank" rel="noopener nofollow sponsored"
        data-goatcounter-click="click-한성-속초식-명태-초무침-밥도둑-반찬" data-goatcounter-title="한성 속초식 명태 초무침 (밥도둑 반찬)">
       <img src="img/한성속초식명태초무침밥도둑반찬.png" alt="" loading="lazy">
